@@ -207,12 +207,6 @@ button:focus{
 .main-top{
 	background: #12557f;
 }
-.left-top a{
-	display: inline-block;
-	color: #ffffff;
-	float: left;
-	font-size: 14px;
-}
 
 .new-btn-d{
 	padding: 12px 30px;
@@ -266,24 +260,11 @@ button:focus{
 	border: 2px solid #ffffff;
 }
 
-.mail-b{
-	float: left;
-}
-.mail-b a{
-	font-size: 14px;
-	color: #ffffff;
-	padding: 12px 30px;
-	border: 2px solid #ffffff;
-}
-.mail-b a:hover{
-	color: #00cb86;
-	border: 2px solid #00cb86;
-}
-
 .right-top{
+}
+.right-top ul{
 	float: right;
 }
-.right-top ul{}
 .right-top ul li{
 	float: left;
 }
@@ -733,23 +714,22 @@ button:focus{
 
 
 /*------------------------------------------------------------------
-    Services
+    services
 -------------------------------------------------------------------*/
 
 .services-box{
 	padding: 70px 0px;
-	background-color: #f2f3f5;
 }
 
-.serviceBox{
+.servicesBox{
     padding: 35px 20px 25px;
     border: 1px solid #16567f;
     text-align: center;
     position: relative;
     transition: all 0.3s ease 0s;
 }
-.serviceBox:hover{ border-color: #00cb86 ; }
-.serviceBox:before{
+.servicesBox:hover{ border-color: #00cb86 ; }
+.servicesBox:before{
     content: "";
     border-top: 20px solid #16567f;
     border-left: 20px solid transparent;
@@ -759,8 +739,8 @@ button:focus{
     right: 7px;
     transition: all 0.3s ease 0s;
 }
-.serviceBox:hover:before{ border-top-color: #00cb86 ; }
-.serviceBox .service-icon{
+.servicesBox:hover:before{ border-top-color: #00cb86 ; }
+.servicesBox .services-icon{
     display: inline-block;
     width: 80px;
     height: 80px;
@@ -772,8 +752,8 @@ button:focus{
     position: relative;
     transition:all 0.3s ease 0s;
 }
-.serviceBox:hover .service-icon{ color: #fff; }
-.serviceBox .service-icon:before{
+.servicesBox:hover .services-icon{ color: #fff; }
+.servicesBox .services-icon:before{
     content: "";
     width: 100%;
     height: 100%;
@@ -786,11 +766,11 @@ button:focus{
     transform: rotate(45deg);
     transition: all 0.3s ease 0s;
 }
-.serviceBox:hover .service-icon:before{
+.servicesBox:hover .services-icon:before{
     border-color: #00cb86 ;
     background: #00cb86 ;
 }
-.serviceBox .title{
+.servicesBox .title{
     font-size: 20px;
     font-weight: 700;
     color: #064774;
@@ -798,17 +778,17 @@ button:focus{
     margin: 0 0 15px 0;
 	padding: 0;
 }
-.serviceBox .description{
+.servicesBox .description{
     font-size: 15px;
     color: #999;
     line-height: 27px;
     margin: 0 0 10px 0;
 }
 @media only screen and (max-width:990px){
-    .serviceBox{ margin-bottom: 30px; }
+    .servicesBox{ margin-bottom: 30px; }
 }
 
-.serviceBox a{
+.servicesBox a{
 	border-radius: 2px;
 	transition: .2s;
 	letter-spacing: 1px;
@@ -819,13 +799,13 @@ button:focus{
 	line-height: 12px;
 }
 
-.serviceBox a.new-btn-d.br-2{
+.servicesBox a.new-btn-d.br-2{
 	border: 2px solid #12557f;
 }
-.serviceBox a:hover{
+.servicesBox a:hover{
 	color: #ffffff;
 }
-.serviceBox a.new-btn-d::before {
+.servicesBox a.new-btn-d::before {
     background: rgba(18,85,127,0.2);
 }
 .services-box .owl-carousel{
@@ -872,82 +852,25 @@ button:focus{
 }
 
 /*------------------------------------------------------------------
-    Appointment
+    laboratories
 -------------------------------------------------------------------*/
 
-.appointment-main{
+.laboratories-box{
 	padding: 70px 0px;
-	position: relative;
+	background-color: #f2f3f5;
 }
 
-.well-block{}
-.well-block .well-title h2{
-	font-size: 32px;
-	font-weight: 600;
-	padding-bottom: 20px;
-}
-
-.well-block form .form-group .control-label{
-	font-size: 16px;
-}
-.well-block form .form-group .form-control {
-	min-height: 60px;
-	min-height: 50px;
-	padding: 0px 15px;
-	border-radius: 0;
-	color: #12557f;
-	border: 1px solid #12557f;
-}
-.well-block form .form-group .form-control:focus{
-	box-shadow: none;
-}
-
-.well-block form .form-group button{
-	border-radius: 2px;
-	transition: .2s;
-	letter-spacing: 1px;
-	padding: 10px 18px;
-	background: #ffffff;
-	color: #12557f;
-	display: inline-block;
-	line-height: 24px;
-	cursor: pointer;
-}
-.well-block form .form-group button.new-btn-d.br-2 {
-    border: 2px solid #12557f;
-}
-.well-block form .form-group button.new-btn-d::before {
-    background: rgba(18,85,127,0.2);
-}
-
-.feature-block .feature-title{
-	font-size: 20px;
-}
-
-.well-block form .form-group button:hover{
-	color: #ffffff;
-}
-
-
-/*------------------------------------------------------------------
-    Gallery
--------------------------------------------------------------------*/
-
-.gallery-box{
-	padding: 70px 0px;
-}
-
-.box-gallery{
+.box-laboratories{
     text-align: center;
     box-shadow: 0 0 5px #7e7d7d;
     position: relative;
 	margin-bottom: 30px;
 }
-.box-gallery img{
+.box-laboratories img{
     width: 100%;
     height: auto;
 }
-.box-gallery .box-content{
+.box-laboratories .box-content{
     width: 100%;
     height: 100%;
     position: absolute;
@@ -955,11 +878,11 @@ button:focus{
     left: 0;
     transition: all 0.5s ease 0s;
 }
-.box-gallery:hover .box-content{
+.box-laboratories:hover .box-content{
     background-color: rgba(255, 242, 242, 0.8);
 }
-.box-gallery .box-content:before,
-.box-gallery .box-content:after{
+.box-laboratories .box-content:before,
+.box-laboratories .box-content:after{
     content: "";
     width: 50px;
     height: 50px;
@@ -968,24 +891,24 @@ button:focus{
     transform: scale(1.5);
     transition: all 0.6s ease 0.3s;
 }
-.box-gallery .box-content:before{
+.box-laboratories .box-content:before{
     border-left: 2px solid #00cb86;
     border-top: 2px solid #00cb86;
     top: 19px;
     left: 19px;
 }
-.box-gallery .box-content:after{
+.box-laboratories .box-content:after{
     border-bottom: 2px solid #00cb86;
     border-right: 2px solid #00cb86;
     bottom: 19px;
     right: 19px;
 }
-.box-gallery:hover .box-content:before,
-.box-gallery:hover .box-content:after{
+.box-laboratories:hover .box-content:before,
+.box-laboratories:hover .box-content:after{
     opacity: 1;
     transform: scale(1);
 }
-.box-gallery .title{
+.box-laboratories .title{
     font-size: 22px;
     color: #333333;
     margin: 0;
@@ -994,12 +917,12 @@ button:focus{
     opacity: 0;
     transition: all 1s ease 0.01s;
 }
-.box-gallery:hover .title{
+.box-laboratories:hover .title{
     top: 32%;
     opacity: 1;
     transition: all 0.5s cubic-bezier(1, -0.53, 0.405, 1.425) 0.01s;
 }
-.box-gallery .title:after{
+.box-laboratories .title:after{
     content: "";
     width: 0;
     height: 2px;
@@ -1011,11 +934,11 @@ button:focus{
     margin: 0 auto;
     transition: all 1s ease 0s;
 }
-.box-gallery:hover .title:after{
+.box-laboratories:hover .title:after{
     width: 80%;
     transition: all 1s ease 0.8s;
 }
-.box-gallery .icon{
+.box-laboratories .icon{
     width: 100%;
     list-style: none;
     padding: 0;
@@ -1027,14 +950,14 @@ button:focus{
     transition-timing-function: cubic-bezier(1, -0.53, 0.405, 1.425);
     transition-delay: 0.1s;
 }
-.box-gallery:hover .icon{
+.box-laboratories:hover .icon{
     bottom: 32%;
     opacity: 1;
 }
-.box-gallery .icon li{
+.box-laboratories .icon li{
     display: inline-block;
 }
-.box-gallery .icon li a{
+.box-laboratories .icon li a{
     display: block;
     width: 40px;
     height: 40px;
@@ -1046,12 +969,12 @@ button:focus{
     margin-right: 5px;
     transition: all 0.3s ease-in-out 0s;
 }
-.box-gallery .icon li a:hover{
+.box-laboratories .icon li a:hover{
     background: #00cb86;
     color: #fff;
 }
 @media only screen and (max-width:990px){
-    .box-gallery{ margin-bottom: 30px; }
+    .box-laboratories{ margin-bottom: 30px; }
 }
 
 
@@ -1171,14 +1094,14 @@ button:focus{
 
 
 /*------------------------------------------------------------------
-    Blog
+    medicaments
 -------------------------------------------------------------------*/
 
-.blog-box{
+.medicaments-box{
 	padding: 70px 0px;
 	background-color: #f2f3f5;
 }
-.blog-inner{
+.medicaments-inner{
 	background: #ffffff;
 	text-align: center;
 	margin-bottom: 30px;
@@ -1186,20 +1109,20 @@ button:focus{
 	box-shadow: 0 2px 5px rgba(0,0,0,.1);
 }
 
-.blog-img{
+.medicaments-img{
 	overflow: hidden;
 }
-.blog-img img{
+.medicaments-img img{
 	transition: all 0.9s ease 0s;
 }
-.blog-inner:hover .blog-img img{
+.medicaments-inner:hover .medicaments-img img{
 	-moz-transform: scale(1.5) rotate(-10deg);
 	-webkit-transform: scale(1.5) rotate(-10deg);
 	-ms-transform: scale(1.5) rotate(-10deg);
 	-o-transform: scale(1.5) rotate(-10deg);
 	transform: scale(1.5) rotate(-10deg);
 }
-.blog-inner a{
+.medicaments-inner a{
 	border-radius: 2px;
 	transition: .2s;
 	letter-spacing: 1px;
@@ -1211,36 +1134,27 @@ button:focus{
 	line-height: 24px;
 }
 
-.blog-inner a.new-btn-d.br-2{
+.medicaments-inner a.new-btn-d.br-2{
 	border: 2px solid #12557f;
 }
 
-.blog-inner a.new-btn-d::before{
+.medicaments-inner a.new-btn-d::before{
 	background: rgba(18,85,127,0.2);
 }
 
 
-.blog-inner a:hover{
+.medicaments-inner a:hover{
 	color: #ffffff;
 }
 
-.blog-inner .item-meta{
-	background: #12557f;
-}
-.blog-inner .item-meta a{
+.medicaments-inner .item-meta a{
 	background: #12557f;
 	color: #ffffff;
 	display: inline-block;
 	border: none;
 }
-.blog-inner .item-meta span{
-	color: #ffffff;
-	background: #00cb86;
-	display: inline-block;
-	padding: 5px;
-}
 
-.blog-inner h2{
+.medicaments-inner h2{
 	margin-top: 20px;
 }
 
@@ -1251,6 +1165,7 @@ button:focus{
 
 .contact-box{
 	padding: 70px 0px;
+	background-color: #f2f3f5;
 }
 
 .left-contact{
@@ -1375,103 +1290,3 @@ select.form-control:not([size]):not([multiple]){
 .footer-box .footer-company-name a:hover{
 	color: #000000;
 }
-
-
-
-
-/*------------------------------------------------------------------
-    Subscribe
--------------------------------------------------------------------*/
-
-.subscribe-box{
-	padding: 70px 0px;
-	background: url(../images/footer-bg.jpg) no-repeat center;
-	background-size: cover;
-	position: relative;
-}
-
-.subscribe-box::before{
-	content: "";
-	background: rgba(0,0,0,0.8);
-	width: 100%;
-	height: 100%;
-	left: 0px;
-	top: 0px;
-	position: absolute;
-}
-
-.subscribe-inner{
-	max-width: 500px;
-	width: 100%;
-	margin: 0 auto;
-}
-.subscribe-inner h2{	
-	font-size: 28px;
-	font-weight: 600;
-	color: #ffffff;
-}
-
-.subscribe-inner p{
-	color: #cccccc;
-}
-
-.subscribe-inner .form-group .form-control-1{
-	width: 100%;
-	padding: 12px 15px;
-	border-radius: 0px;
-	border: none;
-}
-
-.subscribe-inner .form-group button{	
-	letter-spacing: 1px;
-	border-radius: 2px;
-	transition: .2s;
-	letter-spacing: 1px;
-	padding: 10px 18px;
-	background: #ffffff;
-	color: #12557f;
-	display: inline-block;
-	line-height: 24px;
-	border: none;
-	cursor: pointer;
-}
-
-.subscribe-inner .form-group button.new-btn-d.br-2 {
-    border: 2px solid #12557f;
-}
-.subscribe-inner .form-group button.new-btn-d::before{
-	background: rgba(18,85,127,0.2);
-}
-
-.subscribe-inner .form-group button:hover {
-	color: #ffffff;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
